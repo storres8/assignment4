@@ -1,4 +1,6 @@
 <div class="container">
   <h1>Welcome!</h1>
-  <app-game-control></app-game-control>
+  <app-game-control
+    (intervalFired)="onIntervalFired($event)"
+  ></app-game-control>
 </div>
