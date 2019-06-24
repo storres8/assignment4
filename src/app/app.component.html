@@ -1,6 +1,10 @@
 <div class="container">
   <h1>Welcome!</h1>
+  <!-- game-control component -->
   <app-game-control
     (intervalFired)="onIntervalFired($event)"
   ></app-game-control>
+
+  <!-- oddNumber component -->
+  <app-odd *ngFor="let Oddnumber of odd" [number]="Oddnumber"></app-odd>
 </div>
